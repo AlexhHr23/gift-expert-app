@@ -20,7 +20,7 @@ export const GiftExpertApp = () => {
   
       <>
         <h2>GiftExpertApp</h2>
-        <AddCategory />
+        <AddCategory setCategories = { setCategories }/>
         <hr />
 
         <ol>
