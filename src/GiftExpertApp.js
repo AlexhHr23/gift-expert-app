@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 
 import './index.css';
@@ -7,12 +8,11 @@ import './index.css';
 
 export const GiftExpertApp = () => {
 
-    //const categories = ['Demon Slayer', 'One punch', 'Attack on Titan'];
     const [categories, setCategories] = useState(['Demon Slayer', 'One punch', 'Attack on Titan']);
 
-    const handleAdd = () => {
-        setCategories( [...categories, 'Full Metal Alchemist'] );
-    }
+    //const handleAdd = () => {
+    //    setCategories( [...categories, 'Full Metal Alchemist'] );
+    //}
 
 
 
@@ -20,9 +20,8 @@ export const GiftExpertApp = () => {
   
       <>
         <h2>GiftExpertApp</h2>
+        <AddCategory />
         <hr />
-
-        <button onClick = {handleAdd}>Agregar</button>
 
         <ol>
             {
